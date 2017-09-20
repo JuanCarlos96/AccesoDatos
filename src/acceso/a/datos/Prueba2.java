@@ -20,7 +20,7 @@ public class Prueba2 {
         System.out.println("Permisos de escritura: "+(f.canWrite()?"Sí":"No"));
         System.out.println("Permisos de lectura: "+(f.canRead()?"Sí":"No"));
         System.out.println("Tamaño: "+f.length());
-        System.out.println("Es un directorio: "+f.isDirectory());
-        System.out.println("Es un fichero: "+f.isFile());
+        System.out.println("Es un directorio: "+(f.isDirectory()?"Sí":"No"));
+        System.out.println("Es un fichero: "+(f.isFile()?"Sí":"No"));
     }
 }
