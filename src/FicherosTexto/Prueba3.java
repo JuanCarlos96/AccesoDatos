@@ -2,7 +2,7 @@
     Hacer un programa que cree un directorio en el directorio actual y a continuación
     cree dos ficheros de texto en ese directorio con cualquier nombre
  */
-package acceso.a.datos;
+package FicherosTexto;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package acceso.a.datos;
+package FicherosTexto;
 
 import java.io.File;
 
