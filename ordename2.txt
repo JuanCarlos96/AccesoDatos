@@ -1,0 +1,7 @@
+zorro
+hipopotamo
+albatros
+jilguero
+perro
+gato
+ballena
