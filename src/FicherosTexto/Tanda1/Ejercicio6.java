@@ -1,4 +1,4 @@
-package FicherosTexto;
+package FicherosTexto.Tanda1;
 
 import java.io.*;
 

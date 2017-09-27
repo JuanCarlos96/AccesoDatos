@@ -1,7 +1,7 @@
 /*
  Escribir en un archivo de texto con la clase FileWriter los carácteres pares
 */
-package FicherosTexto;
+package FicherosTexto.Tanda1;
 
 import java.io.*;
 
