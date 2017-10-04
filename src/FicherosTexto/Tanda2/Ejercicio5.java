@@ -32,8 +32,8 @@ public class Ejercicio5 {
             }
             br.close();
             
-            hs.addAll(palabras);//añado los objetos sin repetirlos
-            encontradas.addAll(hs);//los objetos sin repetir los añado a otro arraylist
+            hs.addAll(palabras);//añado los objetos sin repetirlos al objeto de la clase HashSet
+            encontradas.addAll(hs);//los objetos sin repetir que hay en hs los añado a otro arraylist
             
             for(int i=0; i<encontradas.size(); i++){
                 int suma = 0,x = 0;
