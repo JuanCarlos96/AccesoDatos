@@ -7,7 +7,7 @@ Leer un archivo binario
 */
 public class Leer {
     public static void main(String[] args) {
-        File f = new File("binario.dat");
+        File f = new File("binariocopia.dat");
         
         try{
             DataInputStream dis = new DataInputStream(new FileInputStream(f));
