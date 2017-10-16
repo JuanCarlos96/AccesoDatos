@@ -21,11 +21,7 @@ public class Ejercicio1 {
                 fecha2 = sdf.parse(datos[2]);
                 
                 if(fecha1.before(fecha2)){
-                    for(int i=0; i<2; i++){
-                        bw.write(datos[i]);
-                        bw.write("  ");
-                    }
-                    bw.write(datos[2]);
+                    bw.write(linea);
                     bw.newLine();
                 }
             }
