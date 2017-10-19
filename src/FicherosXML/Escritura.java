@@ -32,7 +32,7 @@ public class Escritura {
             eMarca.appendChild(doc.createTextNode("Renault"));
             eCoche.appendChild(eMarca);
             Element eModelo = doc.createElement("modelo");
-            eModelo.appendChild(doc.createTextNode("Megano"));
+            eModelo.appendChild(doc.createTextNode("Megane"));
             eCoche.appendChild(eModelo);
             Element eCilindrada = doc.createElement("cilindrada");
             eCilindrada.appendChild(doc.createTextNode("1.5"));
@@ -52,13 +52,35 @@ public class Escritura {
             Element modelocoche2 = doc.createElement("modelo");
             modelocoche2.appendChild(doc.createTextNode("León"));
             coche2.appendChild(modelocoche2);
+            Element cilindradacoche2 = doc.createElement("cilindrada");
+            cilindradacoche2.appendChild(doc.createTextNode("1.6"));
+            coche2.appendChild(cilindradacoche2);
             
+            // Tercer coche
+            Element coche3 = doc.createElement("coche");
+            eRaiz.appendChild(coche3);
+            
+            Attr idcoche3 = doc.createAttribute("id");
+            idcoche3.setValue("3");
+            coche3.setAttributeNode(idcoche3);
+            
+            Element marcacoche3 = doc.createElement("marca");
+            marcacoche3.appendChild(doc.createTextNode("Suzuki"));
+            coche3.appendChild(marcacoche3);
+            Element modelocoche3 = doc.createElement("modelo");
+            modelocoche3.appendChild(doc.createTextNode("Vitara"));
+            coche3.appendChild(modelocoche3);
+            Element cilindradacoche3 = doc.createElement("cilindrada");
+            cilindradacoche3.appendChild(doc.createTextNode("1.9"));
+            coche3.appendChild(cilindradacoche3);
             
             // clases necesarias finalizar la creación del archivo XML
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("ejercicio3.xml"));
+            StreamResult result = new StreamResult(new File("coches.xml"));
+//            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.transform(source, result);
         } catch(Exception e) {
             e.printStackTrace();
