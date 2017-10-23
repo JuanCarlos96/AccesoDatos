@@ -30,9 +30,25 @@ public class Ejercicio3 {
                     Element empleado = doc.createElement("empleado");
                     empleados.appendChild(empleado);
                     
+                    Element nombre = doc.createElement("nombre");
+                    nombre.appendChild(doc.createTextNode(emp.getNombre()));
+                    empleado.appendChild(nombre);
                     
+                    Element fAlta = doc.createElement("fechaAlta");
+                    fAlta.appendChild(doc.createTextNode(emp.getFcontrato()));
+                    empleado.appendChild(fAlta);
+                    
+                    Element fBaja = doc.createElement("fechaDespido");
+                    fBaja.appendChild(doc.createTextNode(emp.getFdespido()));
+                    empleado.appendChild(fBaja);
                 }
             }catch(EOFException ee){}
+            
+            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new File("empleados.xml"));
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.transform(source, result);
         } catch (Exception e) {
             e.printStackTrace();
         }

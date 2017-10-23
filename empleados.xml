@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<empleados>
+<empleado>
+<nombre>Pepe</nombre>
+<fechaAlta>2005/07/14</fechaAlta>
+<fechaDespido>2006/01/20</fechaDespido>
+</empleado>
+<empleado>
+<nombre>Alfonso</nombre>
+<fechaAlta>2004/05/18</fechaAlta>
+<fechaDespido>2004/05/17</fechaDespido>
+</empleado>
+<empleado>
+<nombre>María</nombre>
+<fechaAlta>2001/12/31</fechaAlta>
+<fechaDespido>2001/12/30</fechaDespido>
+</empleado>
+<empleado>
+<nombre>Ana</nombre>
+<fechaAlta>2007/11/06</fechaAlta>
+<fechaDespido>2013/02/13</fechaDespido>
+</empleado>
+</empleados>
