@@ -17,6 +17,7 @@ public class Ejercicio5 {
                     System.out.println(linea);
                 }
             }catch(EOFException ee){}
+            dis.close();
         }catch(Exception e){
             e.printStackTrace();
         }

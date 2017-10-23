@@ -27,6 +27,7 @@ public class Ejercicio6 {
             for(Amigo a:lista){
                 oos.writeObject(a);
             }
+            oos.close();
         }catch(Exception e){
             
         }
