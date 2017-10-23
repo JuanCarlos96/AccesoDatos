@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<company>
+<employee id="10">
+<firstname>Jaime</firstname>
+<lastname>Florin</lastname>
+<email>jaime@example.org</email>
+<department>Recursos Humanos</department>
+</employee>
+</company>
