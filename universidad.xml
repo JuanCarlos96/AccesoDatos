@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<universidad>
+<estudiante>
+<nombre id="1">Juanito Pistolas</nombre>
+<edad>20</edad>
+<hobby>Candy crush</hobby>
+<hobby>Mirarse en el espejo</hobby>
+</estudiante>
+<estudiante>
+<nombre id="2">Johnny Turron</nombre>
+<edad>22</edad>
+<hobby>Comer chuches</hobby>
+<hobby>masticar piedras</hobby>
+</estudiante>
+<estudiante>
+<nombre id="2">Martinico Suavon</nombre>
+<edad>25</edad>
+<hobby>Musica</hobby>
+<hobby>Cine</hobby>
+<hobby>Baseball</hobby>
+</estudiante>
+</universidad>

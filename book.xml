@@ -1,0 +1,17 @@
+<book>
+<person>
+<first>Bill</first>
+<last>Gates</last>
+<age>46</age>
+</person>
+<person>
+<first>Steve</first>
+<last>Jobs</last>
+<age>40</age>
+</person>
+<person>
+<first>Manolo</first>
+<last>Cabezon</last>
+<age>12</age>
+</person>
+</book>
