@@ -24,7 +24,7 @@ public class LecturayEscritura {
             for(int i=0; i<nGroups.getLength(); i++){
                 Element group = (Element)nGroups.item(i);
                 int id = Integer.parseInt(group.getAttribute("id"));
-                int tam = group.getElementsByTagName("videoUrl").item(0).getTextContent().length();
+                int tam = group.getElementsByTagName("videoUrl").item(0).getTextContent().split(" ").length;
                 
                 if (id%2!=0 && tam>1) {
                     Element group2 = doc2.createElement(group.getNodeName());
@@ -38,8 +38,36 @@ public class LecturayEscritura {
                     group2.setAttributeNode(name);
                     
                     Element exercises = (Element)group.getElementsByTagName("exercises").item(0);
+                    Element exercises2 = doc2.createElement(exercises.getNodeName());
+                    group2.appendChild(exercises2);
+                    
+                    Attr id3 = doc2.createAttribute("id");
+                    id3.setNodeValue(exercises.getAttribute("id"));
+                    exercises2.setAttributeNode(id3);
+                    Attr name2 = doc2.createAttribute("name");
+                    name2.setValue(exercises.getAttribute("name"));
+                    exercises2.setAttributeNode(name2);
+                    
+                    Element implementation = (Element)exercises.getElementsByTagName("implementation").item(0);
+                    Element implementation2 = doc2.createElement(implementation.getNodeName());
+                    implementation2.appendChild(doc2.createTextNode(implementation.getTextContent()));
+                    exercises2.appendChild(implementation2);
+                    
+                    Element videoUrl = (Element)group.getElementsByTagName("videoUrl").item(0);
+                    Element videoUrl2 = doc2.createElement(videoUrl.getNodeName());
+                    videoUrl2.appendChild(doc2.createTextNode(videoUrl.getTextContent()));
+                    exercises2.appendChild(videoUrl2);
                 }
             }
+            
+            // clases necesarias finalizar la creación del archivo XML
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new File("fitness2.xml"));
+//            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.transform(source, result);
         } catch (Exception e) {
             e.printStackTrace();
         }
