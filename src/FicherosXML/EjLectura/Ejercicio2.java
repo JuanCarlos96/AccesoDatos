@@ -30,8 +30,6 @@ public class Ejercicio2 {
                         System.out.println("Nombre: "+nom.getTextContent());
                     }
                     
-                    //System.out.println("\nID de estudiante: ");
-                    //System.out.println("Nombre: "+e.getElementsByTagName("nombre").item(0).getTextContent());
                     System.out.println("Edad: "+e.getElementsByTagName("edad").item(0).getTextContent());
                     
                     NodeList hobbys = e.getElementsByTagName("hobby");
