@@ -1,0 +1,22 @@
+<fitness>
+	<group id="1" name = "firstGroup">
+		<exercises id="1" name = "exercise1">
+			<implementation>Hw</implementation>
+			<videoUrl> APGw5Xi8xfQ </videoUrl>
+		</exercises>
+	</group>
+	
+	<group id = "2" name = "group2">
+		<exercises id = "5" name = "exercise5">
+			<implementation>just do it</implementation>
+			<videoUrl>let's see it</videoUrl>
+		</exercises>
+	</group>
+	
+	<group id = "3" name = "group3">
+		<exercises id = "6" name = "exercise6">
+			<implementation>just do it</implementation>
+			<videoUrl>let's see it</videoUrl>
+		</exercises>
+	</group>
+</fitness>
