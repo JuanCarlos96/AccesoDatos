@@ -24,7 +24,7 @@ public class LecturayEscritura {
             for(int i=0; i<nGroups.getLength(); i++){
                 Element group = (Element)nGroups.item(i);
                 int id = Integer.parseInt(group.getAttribute("id"));
-                int tam = group.getElementsByTagName("videoUrl").item(0).getTextContent().split(" ").length;
+                int tam = group.getElementsByTagName("videoUrl").item(0).getTextContent().trim().split(" ").length;
                 
                 if (id%2!=0 && tam>1) {
                     Element group2 = doc2.createElement(group.getNodeName());
@@ -63,7 +63,7 @@ public class LecturayEscritura {
             // clases necesarias finalizar la creación del archivo XML
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(doc);
+            DOMSource source = new DOMSource(doc2);
             StreamResult result = new StreamResult(new File("fitness2.xml"));
 //            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
