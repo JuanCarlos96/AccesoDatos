@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Servers>
+<server>
+<name>algo</name>
+<port>1111</port>
+</server>
+<server>
+<name>print</name>
+<port>4466</port>
+</server>
+</Servers>

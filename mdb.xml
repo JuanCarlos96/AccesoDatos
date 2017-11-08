@@ -1,0 +1,30 @@
+<mdb>
+	<movies>
+		<movie id="godfather">
+			<title>The Godfather</title>
+			<year>1972</year>
+			<directors>
+				<director idref="francisfordcoppola"/>
+			</directors>
+			<genres>
+				<genre>Crime</genre>
+				<genre>Drama</genre>
+			</genres>
+			<cast>
+				<performer>
+					<actor idref="marlonbrando"/>
+					<role>Don Vito Corleone</role>
+				</performer>
+			</cast>
+		</movie>
+	</movies>
+	
+	<performer id="kimnovak">
+		<name>Marilyn Pauline Novak</name>
+		<dob>1933-02-13</dob>
+		<pob>Chicago, Illinois, USA</pob>
+		<actedin>
+			<movie idref="vertigo"/>
+		</actedin>
+	</performer>
+</mdb>
