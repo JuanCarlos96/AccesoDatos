@@ -25,8 +25,7 @@ public class Ejercicio1 {
             
             NodeList uls = doc2.getElementsByTagName("ul");
             for(int i=0; i<uls.getLength(); i++){
-                Node n1 = uls.item(i);
-                Element ul = (Element)n1;
+                Element ul = (Element)uls.item(i);
                 Element ul2 = doc.createElement(ul.getNodeName());
                 body.appendChild(ul2);
 
@@ -36,13 +35,13 @@ public class Ejercicio1 {
                 
                 NodeList lis = ul.getElementsByTagName("li");
                 for(int j=0; j<lis.getLength(); j++){
-                    Node n2 = lis.item(j);
-                    Element li = doc.createElement(n2.getNodeName());
-                    ul2.appendChild(li);
+                    Element li = (Element)lis.item(j);
+                    Element li2 = doc.createElement(li.getNodeName());
+                    ul2.appendChild(li2);
                     
-                    Element a = (Element)ul.getElementsByTagName("a").item(j);
+                    Element a = (Element)li.getElementsByTagName("a").item(0);
                     Element a2 = doc.createElement(a.getNodeName());
-                    li.appendChild(a2);
+                    li2.appendChild(a2);
                     
                     Attr ahref = doc.createAttribute("href");
                     ahref.setValue(a.getAttribute("href"));
@@ -55,6 +54,7 @@ public class Ejercicio1 {
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(new File("lista.html"));
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.transform(source, result);
         } catch (Exception e) {
             e.printStackTrace();
