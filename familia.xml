@@ -1,0 +1,28 @@
+<xml>
+	<grandparent>
+		<parent>
+			<father>A</father>
+			<mother>B</mother>
+			<children>
+				<name>C</name>
+				<name>D</name>
+			</children>
+		</parent>
+		<parent>
+			<father>E</father>
+			<mother>F</mother>
+			<children>
+				<name>G</name>
+				<name>H</name>
+				<name>I</name>
+			</children>
+		</parent>
+		<parent>
+			<father>J</father>
+			<mother>K</mother>
+			<children>
+				<name>L</name>
+			</children>
+		</parent>
+	</grandparent>
+</xml>

@@ -16,8 +16,6 @@ public class Ejercicio1 {
             
             doc2.normalize();
             
-            doc.appendChild(doc.createTextNode("<!DOCTYPE html>"));
-            
             Element html = doc.createElement("html");
             doc.appendChild(html);
             Element body = doc.createElement("body");
@@ -27,12 +25,12 @@ public class Ejercicio1 {
             for(int i=0; i<uls.getLength(); i++){
                 Element ul = (Element)uls.item(i);
                 Element ul2 = doc.createElement(ul.getNodeName());
-                body.appendChild(ul2);
-
+     
                 Attr ultype = doc.createAttribute("type");
                 ultype.setValue(ul.getAttribute("type"));
                 ul2.setAttributeNode(ultype);
-                
+                body.appendChild(ul2);
+           
                 NodeList lis = ul.getElementsByTagName("li");
                 for(int j=0; j<lis.getLength(); j++){
                     Element li = (Element)lis.item(j);
@@ -41,12 +39,12 @@ public class Ejercicio1 {
                     
                     Element a = (Element)li.getElementsByTagName("a").item(0);
                     Element a2 = doc.createElement(a.getNodeName());
-                    li2.appendChild(a2);
                     
                     Attr ahref = doc.createAttribute("href");
                     ahref.setValue(a.getAttribute("href"));
                     a2.setAttributeNode(ahref);
                     a2.appendChild(doc.createTextNode(a.getTextContent()));
+                    li2.appendChild(a2);
                 }
             }
             
