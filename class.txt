@@ -1,0 +1,38 @@
+
+Estudiante no: 393
+
+Nombre: dinkar
+
+Apellido: kad
+
+Apodo: dinkar
+
+Notas: 85
+
+
+
+Estudiante no: 493
+
+Nombre: Vaneet
+
+Apellido: Gupta
+
+Apodo: vinni
+
+Notas: 95
+
+
+
+Estudiante no: 593
+
+Nombre: jasvir
+
+Apellido: singn
+
+Apodo: jazz
+
+Notas: 90
+
+
+
+
