@@ -1,8 +1,6 @@
 package FicherosXML.SAX;
 
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
